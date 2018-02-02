@@ -1,8 +1,86 @@
-<html>
 
-<body>
-  <h1> Poem</h1>
-  <p>rainbow. maan im so bored.</p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body><center>
 
+    <svg height ="600" width = "960" style="border: 1px solid black">
+    </svg>
+
+    <script>
+        var canvas = d3.select('svg');
+        var dataPoints = [];
+        var w = 960, h = 600, N = 20;
+        for(var i = 0; i<N;++i){
+            dataPoints.push([Math.random()*w,Math.random()*h,Math.random()*50,getRandomColour()]);
+            //data points is (int   , int   , int   , colour)
+            //               (x-cord, y-cord, radius, colour)
+        }
+        var linePoints = [];
+        var b = 0;
+        for(var i = 0; i<N;++i){
+            if (b == N-1){
+                linePoints.push([((dataPoints[b])[0]),((dataPoints[b])[1]),((dataPoints[0])[0]),((dataPoints[0])[1])]);
+                b++
+            }else{
+                linePoints.push([((dataPoints[b])[0]),((dataPoints[b])[1]),((dataPoints[b+1])[0]),((dataPoints[b+1])[1])]);
+                ++b;
+            }
+
+        }
+
+        canvas.selectAll('line').data(linePoints).enter()
+            .append("line")
+            .style("stroke" , getRandomColour())
+            .attr("x1", function (d){ return d[0];})
+            .attr("y1", function (d){ return d[1];})
+            .attr("x2", function (d){ return d[2];})
+            .attr("y2", function (d){ return d[3];});
+
+        canvas.selectAll('circle').data(dataPoints).enter()
+            .append('circle')
+            .attr  ('cx'        , function (d){ return d[0];}) //x var
+            .attr  ('cy'        , function (d){ return d[1];}) //y var
+            .attr  ('r'         , function (d){ return d[2];}) //radius
+            .attr  ('fill'      , function (d){ return d[3];}) //colour
+            .on    ("mouseover" , function ( ){ d3.select(this).style("fill", getRandomColour());}) //changes colour when the mouse is entering the area of a circle
+            .on    ("mouseout"  , function ( ){ d3.select(this).style("fill", getRandomColour());}) //changes colour when the mouse is leaving the area of a circle
+            .on    ("mousedown" , changeVolume);                                                    //changes the size of the circle when the mouse is pressed
+
+
+
+        canvas.selectAll('line').data(dataPoints).enter()
+            .append("line")
+            .style("stroke", "black")
+            .attr("x1" , function (d) { return d[0];})
+            .attr("x1" , function (d) { return d[0];})
+
+        //EFFECTS: Changes the size of the selected circle
+        function changeVolume(){
+            d3.select(this)
+                .transition()                   //calls for transition
+                .delay(0)                       //delay of the transition
+                .duration(1000)                 //duration of the transition
+                .attr("r", 0)                  //changes the radius
+        };
+
+        //EFFECTS: Creates a random colour
+        function getRandomColour() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)]; //Math.floor(x) -> x rounded down
+            }
+            return color;
+        }
+
+
+
+    </script>
+
+</center></body>
 </html>
