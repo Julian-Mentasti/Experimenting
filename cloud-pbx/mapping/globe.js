@@ -2,11 +2,12 @@
 var width = 960,
     height = 500;
 
+//520
 var proj = d3.geoOrthographic()
     .scale(230)
     .translate([width / 2, height / 2])
 // change this to 180 for transparent globe
-    .clipAngle(90);
+    .clipAngle(180);
 
 
 var path = d3.geoPath().projection(proj).pointRadius(1.5);
@@ -158,7 +159,7 @@ function spin() {
   timer = d3.timer(function() {
     var dt = Date.now() -time;
 
-    proj.rotate([rotate[0] + velocity[0] * dt/3, rotate[1] + velocity[1] * dt/3]);
+    proj.rotate([rotate[0] + velocity[0] * dt/1.5, rotate[1] + velocity[1] * dt/1.5]);
 
     refresh();
   });
