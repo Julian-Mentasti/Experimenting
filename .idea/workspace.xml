@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd5a3bc3-5096-4762-afe7-bb0da33e8efd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/graphs/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphs/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/graphs/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,17 +20,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graphs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="375">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graphs/index2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graphs/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="1530">
+              <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -57,8 +65,9 @@
         <option value="$PROJECT_DIR$/bs4/scss/styles.scss" />
         <option value="$PROJECT_DIR$/bs4/gulpfile.js" />
         <option value="$PROJECT_DIR$/h_animation/graphs.html" />
-        <option value="$PROJECT_DIR$/graphs/index.html" />
         <option value="$PROJECT_DIR$/graphs/data.json" />
+        <option value="$PROJECT_DIR$/graphs/index.html" />
+        <option value="$PROJECT_DIR$/graphs/index2.html" />
       </list>
     </option>
   </component>
@@ -136,12 +145,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529119916555</updated>
       <workItem from="1529119918549" duration="2081000" />
-      <workItem from="1529477660306" duration="1646000" />
+      <workItem from="1529477660306" duration="1979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3727000" />
+    <option name="totallyTimeSpent" value="4060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="481" width="1920" height="1053" extended-state="6" />
@@ -194,17 +203,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/index.html">
+    <entry file="file://$PROJECT_DIR$/graphs/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="1530">
+          <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/data.json">
+    <entry file="file://$PROJECT_DIR$/graphs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="375">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
         </state>
       </provider>
     </entry>
