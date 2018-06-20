@@ -17,8 +17,8 @@ path {
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var width = 960,
-    height = 960;
+var width = 100,
+    height = 100;
 
 var start = Date.now(),
     points = [];
@@ -30,15 +30,23 @@ var bounds = d3.geom.polygon([
   [+width / 2, -height / 2]
 ]);
 
-circle(0, 0, 120, 96, -.001);
-circle(0, 0, 60, 10, .05);
-circle(0, 0, 200, 15, -.05);
-circle(0, 0, 200, 3, 0.05);
-circle(0, 0, 350, 50, -.002);
-circle(0, 0, 400, 18, .001);
+// circle(0, 0, 120, 96, -.001);
+// circle(0, 0, 60, 10, .05);
+// circle(0, 0, 200, 15, -.05);
+// circle(0, 0, 200, 3, 0.05);
+// circle(0, 0, 350, 50, -.002);
+// circle(0, 0, 400, 18, .001);
+// circle(0, 0, 0, 1, -.02);
+
+
+// smaller
+
+circle(0, 0, 20, 30, -.001);
+circle(0, 0, 15, 5, .05);
+circle(0, 0, 50, 8, -.05);
+
 //circle(0, 0, 60, 3, -.05);
 //circle(0, 0, 15, 4, -.02);
-circle(0, 0, 0, 1, -.02);
 //
 //
 // circle(100, -150, 13, 1, -.05);
