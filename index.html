@@ -1,12 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Julian Mentasti</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body><center>
+    <h1>Hello There!</h2>
+    <p> Hi, my name is Julian, I'm a computer science student at UBC. I'm interested in computer vision, rad-hard memory, control system and data.</p>
+    <p> Currently, I'm a developer for UBC Orbit's Payload team and I am currently an intern at CloudPBX. </p>
+    <p> This website is a mess, what can I say other than I am not a front end developer, nor do I feel like getting a template at this moment... although wordpress..</p>
+
+    <p> feel free to contact me at julian (at) mentasti.net </p>
+    <p> Messages from van </p>
 
     <svg height ="600" width = "960" style="border: 1px solid black">
     </svg>
@@ -14,7 +20,7 @@
     <script>
         var canvas = d3.select('svg');
         var dataPoints = [];
-        var w = 960, h = 600, N = 30;
+        var w = 720, h = 400, N = 30;
         for(var i = 0; i<N;++i){
             dataPoints.push([Math.random()*w,Math.random()*h,Math.random()*50,getRandomColour()]);
             //data points is (int   , int   , int   , colour)
